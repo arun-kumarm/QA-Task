@@ -1,0 +1,330 @@
+package UI;
+
+	import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+
+
+
+public class QATask {
+
+
+	public static void main(String[] args) throws InterruptedException {
+	
+		float Availableqty = 0;
+		float Inboundqty = 0;
+		float Transferqty = 0;
+		float Unfulfillableqty =0;
+		float Researchingqty =0;
+		float CustomerDamagedqty =0;
+		float Defectiveqty =0;
+		
+System.setProperty("webdriver.chrome.driver", "C:\\browserdrivers\\chromedriver.exe");
+
+WebDriver driver=new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("https://sellerfusion-qa-test.vercel.app/");
+
+SoftAssert SoftAssert = new SoftAssert();
+
+SoftAssert.assertEquals(driver.findElement(By.xpath("//a[.=\"Profits\"]")).getText(), "Profits");
+
+SoftAssert.assertEquals(driver.findElement(By.xpath("//a[.=\"Dashboad\"]")).getText(), "Dashboad");
+
+SoftAssert.assertEquals(driver.findElement(By.xpath("//p[.=\"Summary metrics of your business\"]")).getText(), "Summary metrics of your business");
+
+
+SoftAssert.assertAll();
+
+
+
+System.out.println("all the texts are asserted successfully");
+
+
+
+//F Stop Labs (USA)
+
+	Thread.sleep(2000);
+
+System.out.println
+("F Stop Labs (USA) " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[1]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[1]")).getText());
+
+System.out.println
+("Gross revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[2]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[2]")).getText());
+
+System.out.println
+(" change in  revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[1]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[1]")).getText());
+
+System.out.println
+("New profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[3]")).getText());
+
+System.out.println
+(" change in  profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[2]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[2]")).getText());
+
+
+System.out.println
+(" Cost is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[1]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[1]")).getText());
+
+System.out.println
+(" Margin is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[2]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[2]")).getText());
+
+System.out.println
+(" Orders count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[1]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[1]")).getText());
+
+
+System.out.println
+(" Total unit count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[2]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[2]")).getText());
+
+System.out.println
+(" Total refund is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[3]")).getText());
+
+
+//*****************************************************************LITTLE YOYO (CAN)*********************************************************************
+
+System.out.println
+("F Stop Labs (USA) " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[4]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[4]")).getText());
+System.out.println
+("Gross revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[5]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[5]")).getText());
+
+System.out.println
+(" change in  revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[3]")).getText());
+
+System.out.println
+("New profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[6]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[6]")).getText());
+
+System.out.println
+(" change in  profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[2]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[2]")).getText());
+
+
+System.out.println
+(" Cost is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[3]")).getText());
+
+System.out.println
+(" Margin is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[4]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[4]")).getText());
+
+System.out.println
+(" Orders count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[3]")).getText());
+
+
+System.out.println
+(" Total unit count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[4]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[4]")).getText());
+
+System.out.println
+(" Total refund is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[5]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[5]")).getText());
+
+//*********************************************************************************GTGROUP (USA)********************************************************************
+
+
+System.out.println
+("GTGROUP (USA) " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[7]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[7]")).getText());
+System.out.println
+("Gross revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[8]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[8]")).getText());
+
+System.out.println
+(" change in  revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[3]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[3]")).getText());
+
+System.out.println
+("New profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[9]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[9]")).getText());
+
+System.out.println
+(" change in  profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[4]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[4]")).getText());
+
+
+System.out.println
+(" Cost is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[5]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[5]")).getText());
+
+System.out.println
+(" Margin is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[6]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[6]")).getText());
+
+System.out.println
+(" Orders count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[7]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[7]")).getText());
+
+
+System.out.println
+(" Total unit count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[8]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[8]")).getText());
+
+System.out.println
+(" Total refund is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[9]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[9]")).getText());
+
+
+
+
+//*********************************************************************************F Stop Labs (MEX)********************************************************************
+
+
+System.out.println
+("F Stop Labs (MEX " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[10]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[10]")).getText());
+System.out.println
+("Gross revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[11]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[11]")).getText());
+
+System.out.println
+(" change in  revenue is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[4]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[4]")).getText());
+
+System.out.println
+("New profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss77 css-1dylzch'])[12]|(//p[@class='MuiTypography-root MuiTypography-body1 jss44 css-1dylzch'])[12]")).getText());
+
+System.out.println
+(" change in  profit is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss81 css-1dylzch'])[5]|(//p[@class='MuiTypography-root MuiTypography-body1 jss48 css-1dylzch'])[5]")).getText());
+
+
+System.out.println
+(" Cost is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[7]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[7]")).getText());
+
+System.out.println
+(" Margin is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss78 css-1dylzch'])[8]|(//p[@class='MuiTypography-root MuiTypography-body1 jss45 css-1dylzch'])[8]")).getText());
+
+System.out.println
+(" Orders count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[10]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[10]")).getText());
+
+
+System.out.println
+(" Total unit count is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[11]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[11]")).getText());
+
+System.out.println
+(" Total refund is " + driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 jss72 css-1dylzch'])[12]|(//p[@class='MuiTypography-root MuiTypography-body1 jss39 css-1dylzch'])[12]")).getText());
+
+
+
+
+
+//Locating the Main Menu (Parent element)
+List<WebElement> LPAs = driver.findElements(By.xpath("//span[.=\"FBA\"]"));
+
+int LPASize = LPAs.size();
+
+System.out.println(LPASize);
+
+
+
+WebElement LPA = driver.findElement(By.xpath("//span[.=\"FBA\"]"));
+
+WebElement Continueshopping = LPA;
+
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", LPA);
+
+Thread.sleep(3000);
+
+//Instantiating Actions class
+Actions actions = new Actions(driver);
+
+//Hovering on main menu
+actions.moveToElement(LPA);
+Thread.sleep(3000);
+actions.click().build().perform();
+
+Thread.sleep(3000);
+//Total = Available + Transfer + Inbound + Unfulfillable + Researching
+
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Available\"] ")).size()==0)){
+	
+	String Available = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[4]")).getText();
+	
+	System.out.println(Available);
+	
+	//Available = Available.toString();
+	
+ Availableqty = Float.parseFloat(Available);
+	
+}
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Transfer\"] ")).size()==0)){
+	
+	String Transfer = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[6]")).getText();
+	
+	System.out.println(Transfer);
+	
+	Transferqty = Float.parseFloat(Transfer);
+	
+	 
+}
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Inbound\"] ")).size()==0)){
+	
+	String Inbound = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[8]")).getText();
+	
+	System.out.println(Inbound);
+	
+	Inboundqty = Float.parseFloat(Inbound);
+}
+
+if (!(driver.findElements(By.xpath("//span[.=\"Unfulfillable\"] ")).size()==0)){
+	
+	String Unfulfillable = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[10]")).getText();
+	
+	System.out.println(Unfulfillable);
+Unfulfillableqty = Float.parseFloat(Unfulfillable);
+	
+}
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Researching\"] ")).size()==0)){
+	
+	String Researching = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[12]")).getText();
+	
+	System.out.println(Researching);
+	
+Researchingqty = Float.parseFloat(Researching);
+	
+}
+
+
+float Total = Availableqty+Transferqty+Inboundqty+Unfulfillableqty+Researchingqty;
+
+System.out.println(Total);
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Customer Damaged\"] ")).size()==0)){
+	
+	String CustomerDamaged = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[18]")).getText();
+	
+	System.out.println(CustomerDamaged);
+	
+	CustomerDamagedqty = Float.parseFloat(CustomerDamaged);
+	
+}
+
+
+if (!(driver.findElements(By.xpath("//span[.=\"Defective\"] ")).size()==0)){
+	
+	String Defective = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[20]")).getText();
+	
+	System.out.println(Defective);
+	
+	Defectiveqty = Float.parseFloat(Defective);
+	
+}
+
+
+float TotalDamage = CustomerDamagedqty+Defectiveqty;
+
+if (TotalDamage ==Unfulfillableqty) {
+	
+	System.out.println("Customer Damaged &  Defective are matched with Unfulfilled");
+}else {
+	
+System.out.println("Customer Damaged &  Defective are not matched with Unfulfilled");}
+
+
+driver.quit();
+
+
+
+
+
+
+}
+}
